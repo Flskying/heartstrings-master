@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    text-align: center;
+/*    cursor: url('../img/mouse.png'), auto; */
+}
+
+header {
+/*    background-color: #ececec;
+    padding: 20px; */
+	height: 30px;
+	position: relative;
+/* 	background-image: url('path_to_your_image.jpg'); */
+	background-size: cover;
+/* 	overflow: hidden; */
+	background-position: center;
+	filter: blur(10px); /* 这里的10px是模糊半径，可以根据需要调整 */
+}
+
+header h1 {
+    margin: 0;
+}
+
+.top-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+/*    background-image: url("../img/top1.jpg"); */
+    background-size: cover; /* 背景图片尺寸为 cover，保证铺满容器 */
+    background-position: center center; /* 背景图片居中显示 */
+    height: 600px; /* 设置容器的固定高度 */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* 文字颜色 */
+    text-align: center;
+    z-index: 99; /* 确保文字在模糊背景之上 */
+}
+
+/* .left-image, .right-image {
+    width: 20%;
+}
+
+.left-image img, .right-image img {
+    width: 100%;
+    border-radius: 50%;
+} */
+
+.center-heart {
+    height: 300px; /* 设置容器的固定高度 */
+    width: 90%; /* 设置容器的宽度，这里假设占父元素宽度的90% */
+    margin: 0 auto; /* 使用 margin: 0 auto; 让容器水平居中 */
+    position: relative; /* 设置容器为相对定位 */
+    overflow: hidden; /* 隐藏超出容器的部分 */
+    background-image: url('heart_image.png'); /* 设置背景图片的 URL */
+    background-size: cover; /* 背景图片尺寸为 cover，保证铺满容器 */
+    background-position: center center; /* 背景图片居中显示 */
+}
+
+
+/* .center-heart img {
+    width: 10%;
+} */
+
+.countdown {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.feature {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 30%;
+}
+
+footer {
+    background-color: #ececec;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* 波浪效果 */
+ 
+.sea {
+    position: relative;
+    text-align: center;
+/* 	background-image: url("../img/top1.jpg"); */
+/*    background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%); */
+/* 	background: #FFAFBD;  
+	background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  
+	background: linear-gradient(to right, #ffc3a0, #FFAFBD); 
+ */
+    background-size: cover; /* 背景图片尺寸为 cover，保证铺满容器 */
+    background-position: center center; /* 背景图片居中显示 */
+    height: 600px; /* 设置容器的固定高度 */
+    color: white;
+	
+}
+ 
+ 
+.inner-sea {
+    height: 65vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+ 
+ 
+ 
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px; /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+}
+ 
+.content {
+    position: relative;
+    height: 20vh;
+    text-align: center;
+    background-color: white;
+}
+ 
+.content a {
+    margin: 0 5px;
+    font-size: 12px;
+    color: #333;
+}
+ 
+.content a:hover {
+    color: #000;
+}
+ 
+/* Animation */
+ 
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+    .content {
+        height: 30vh;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}

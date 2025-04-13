@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+/*            background-color: #f8f8f8; */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+/*            background-color: #3385ff; */
+			margin-top:10%;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+/*            box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+/*            background-color: #fff; */
+/*            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+        }
+        .logo {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .logo img {
+            width: 180px;
+            height: auto;
+        }
+        .search-form {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .search-form input[type="text"] {
+            width: 500px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 24px;
+            outline: none;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .search-form button {
+            padding: 12px 24px;
+            font-size: 16px;
+           background-color: #3385ff;
+            color: #fff;
+            border: none;
+            border-radius: 24px;
+            margin-left: 10px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+/*            background-color: #3385ff; */
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+/*            box-shadow: 0 -2px 4px rgba(0,0,0,0.1); */
+        }
+		.container{
+/* 			padding-left:30%; */
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.topbox{
+			
+		}
+    </style>
+</head>
+<body>
+	<div>
+		
+	</div>
+    <header>
+        <div class="logo">
+            <img src="https://www.baidu.com/img/flexible/logo/pc/result.png" alt="百度">
+        </div>
+        <div class="search-form">
+            <form>
+<!-- 			<form action="https://www.baidu.com/s" method="get"> -->
+                <input type="text" name="wd" placeholder="请输入搜索内容" value="情侣博客">
+                <button type="submit">百度一下</button>
+            </form>
+        </div>
+    </header>
+<!--    <div class="container">
+        <div style="flex-direction: row;">
+			<h3>百度热搜</h3>
+			<h3>刷新</h3>
+		</div>
+		<div class="topbox">
+			<div class="tops">
+				<span>七夕</span>
+			</div>
+			
+		</div>
+    </div> -->
+    <footer class="footer">
+<<<<<<< HEAD
+        <p>&copy; 2024 百度 | 设计和开发：赵先生</p>
+=======
+        <p>&copy; 2024 百度 | 设计和开发：Mr.zhao</p>
+>>>>>>> 1dd2390fa98269f9f74ca8831b890741b46dfdf0
+    </footer>
+	    <script>
+	        document.addEventListener('DOMContentLoaded', function() {
+	            document.querySelector('form').addEventListener('submit', function(event) {
+	                event.preventDefault(); // Prevent default form submission
+	                var keyword = document.querySelector('input[name="wd"]').value.trim();
+	                if (keyword === "情侣博客") {
+	                    window.location.href = 'html/aixin.html'; // Redirect to heart.html
+	                } else {
+	                    // Handle other search cases or submit to Baidu
+	                    // Example: this.submit();
+	                }
+	            });
+	        });
+	    </script>
+</body>
+</html>
